@@ -17,7 +17,7 @@ body{max-width: 100%;
     background-color:lightgrey;
     border-radius: 2%;
 }
-/*////////////////////////////////////////////////////////////*/
+/*////////////////////////////фото/мем////////////////////////////////*/
 .png{
     width:85%;
 }
@@ -26,26 +26,33 @@ body{max-width: 100%;
     background-color:lightgrey;
     text-align:center;
 }
-/*////////////////////////////////////////////////////////////*/
+/*//////////////////////////////титле//////////////////////////////*/
 .string{
     display: flex;
     margin: 3%;
     justify-content: space-between;
 }
 
-
-
-
-
-
+/*///////////////////////////клікабельность///////////////////////////////////////////*/
+.bayan-continer-meme{
+    display: none;/**/
+}
 .bayan-title{
     display: block;
-    cursor: pointer; /*очкі за смену курсора*/
-    padding: 1%;   
-    transition: background-color 1s ease-out; /*очкі- плавная смена*/
+    cursor: pointer;/*10-destop-*/
+    
 }
-.bayan-title:hover{
-    background-color:red
+/* .bayan-title:hover{
+    color: brown;
+*/
+.bayan-input{
+    appearance: none;/*ісчезает відімый інпут*/
 }
-.bayan-input:checked ~ .for-meme{display: block;}
-
+.bayan-input:checked~ .bayan-continer-meme{
+    display: block;/**/
+}
+/*.bayan-input:checked~ .bayan-title{
+    display: none;
+}
+*/
+/*//////////////////////////////////////////////////////////////////////////////////*/
