@@ -1,0 +1,51 @@
+@media only screen and (max-width: 320px){
+/*
+You can't just copy and paste CSS
+Keep calm and carry on
+Work-life balance
+Dude, where is JS?
+Relax and take it easy
+*/
+}
+body{max-width: 100%;
+    background-color:white;
+    font-size: 80%;
+}
+.bayan{
+    max-width: 85%; /*2-одинаковый отступ*/
+    margin: 0 auto;/*2-по центру*/
+    background-color:lightgrey;
+    border-radius: 2%;
+}
+/*////////////////////////////////////////////////////////////*/
+.png{
+    width:85%;
+}
+.bayan-continer-meme{
+    max-width: 100%;
+    background-color:lightgrey;
+    text-align:center;
+}
+/*////////////////////////////////////////////////////////////*/
+.string{
+    display: flex;
+    margin: 3%;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.bayan-title{
+    display: block;
+    cursor: pointer; /*очкі за смену курсора*/
+    padding: 1%;   
+    transition: background-color 1s ease-out; /*очкі- плавная смена*/
+}
+.bayan-title:hover{
+    background-color:red
+}
+.bayan-input:checked ~ .for-meme{display: block;}
+
