@@ -6,10 +6,14 @@ Work-life balance
 Dude, where is JS?
 Relax and take it easy
 */
+
+html{
+    scroll-behavior: smooth;
 }
+
 body{max-width: 100%;
     background-color:white;
-    font-size: 80%;
+    font-size: 200%;
     color: blue;
 }
 .bayan{
@@ -24,12 +28,13 @@ body{max-width: 100%;
 }
 /*////////////////////////////фото/мем////////////////////////////////*/
 .png{
-    width:85%;
+    width:45%;
 }
 .bayan-continer-meme{
     max-width: 100%;
     background-color:lightgrey;
     text-align:center;
+    
 }
 /*//////////////////////////////титле//////////////////////////////*/
 .string{
@@ -40,14 +45,17 @@ body{max-width: 100%;
 
 /*///////////////////////////клікабельность///////////////////////////////////////////*/
 .bayan-continer-meme{
-    display: none;/**/}
+    display: none;
+    animation: meme 2s
+    /**/}
 
 .bayan-title{
     display: block;
     cursor: pointer;/*10-destop-*/
     color: blue;
     padding: 2% 2%;
-    transition: color 3s;
+    transition: color 1s;
+   
 }
 /* .bayan-title:hover{
     color: brown;
@@ -57,11 +65,15 @@ body{max-width: 100%;
 }
 .bayan-input:checked~.bayan-continer-meme{
     display: block;/**/
+    animation: meme 2s
 }
 .bayan-input:checked ~ .string > .bayan-title{
   color: black;
 }
-
+.bayan-input:checked ~ .string > .bayan-icon{
+    transform: rotate(45deg);
+    transition: transform 1s
+  }
 
 /*//////////////////////////////клікабельность 11111111111///////////////////////////////////////////////////*/
 
@@ -77,7 +89,7 @@ body{max-width: 100%;
     cursor: pointer;/*10-destop-*/
     color:black;
     padding: 2% 2%;
-    transition: color 3s;
+    transition: color 1s;
 }
 /* .bayan-title:hover{
     color: brown;
@@ -86,12 +98,61 @@ body{max-width: 100%;
     appearance: none;/*ісчезает відімый інпут*/
 }
 .bayan-input:checked~.bayan-continer-meme1{
-    display: none;/**/
+    display: none;
+    animation: meme 2s
 }
 .bayan-input:checked ~ .string > .bayan-title1{
   color: blue;
+  
 }
-/*         ////////////////////////////////                          //////////////////*/
-/*.png-input{
-    appearance: none;/
-}*/
+.bayan-input:checked ~ .string > .bayan-icon1{
+    transform: rotate(45deg);
+    transition: transform 1s}
+
+/*////////////////////////////////  icon//////////////////*/
+
+.icon-input:checked~ .string >.bayan-icon{
+    transform: rotate(45deg);
+    transition: transform 1s
+}
+.icon-input:checked~.bayan-continer-meme{
+    display: block;
+    animation: meme 2s;}
+
+.icon-input:checked~ .string >.bayan-title{
+    color: black;}
+
+
+@keyframes meme{
+        0%{opacity: 0;}
+        100% {opacity: 1;}
+    }   
+.bayan-icon{
+    color: black;}   
+.icon-input{
+   appearance: none;
+}
+@keyframes icon{
+    0%{transform: rotate(45deg);}
+    100% {transform: rotate(0deg)}}
+/*////////////////////////////////  icon1111//////////////////*/
+
+.icon-input:checked~ .string >.bayan-icon1{
+    transform: rotate(45deg);
+    transition: transform 1s
+}
+.icon-input:checked~.bayan-continer-meme1{
+    display: none;
+    animation: meme 2s;}
+.icon-input:checked~ .string >.bayan-title1{
+    color:blue;}
+@keyframes meme{
+        0%{opacity: 0;}
+        100% {opacity: 1;}
+    }   
+.bayan-icon1{
+    color: black;}   
+.icon-input{
+   appearance: none;
+}
+}
