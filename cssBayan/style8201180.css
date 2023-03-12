@@ -1,0 +1,158 @@
+@media only screen and (max-width: 820px){
+/*
+You can't just copy and paste CSS
+Keep calm and carry on
+Work-life balance
+Dude, where is JS?
+Relax and take it easy
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{max-width: 100%;
+    background-color:white;
+    font-size: 200%;
+    color: blue;
+}
+.bayan{
+    max-width: 85%; /*2-одинаковый отступ*/
+    margin: 0 auto;/*2-по центру*/
+    background-color:lightgrey;
+    border-radius: 2%;
+}
+.css{
+    color: black;
+    padding-left: 2%;
+}
+/*////////////////////////////фото/мем////////////////////////////////*/
+.png{
+    width:45%;
+}
+.bayan-continer-meme{
+    max-width: 100%;
+    background-color:lightgrey;
+    text-align:center;
+    
+}
+/*//////////////////////////////титле//////////////////////////////*/
+.string{
+    display: flex;
+    margin: 3%;
+    justify-content: space-between;
+}
+
+/*///////////////////////////клікабельность///////////////////////////////////////////*/
+.bayan-continer-meme{
+    display: none;
+    animation: meme 2s
+    /**/}
+
+.bayan-title{
+    display: block;
+    cursor: pointer;/*10-destop-*/
+    color: blue;
+    padding: 2% 2%;
+    transition: color 1s;
+   
+}
+/* .bayan-title:hover{
+    color: brown;
+*/
+.bayan-input{
+    appearance: none;/*ісчезает відімый інпут*/
+}
+.bayan-input:checked~.bayan-continer-meme{
+    display: block;/**/
+    animation: meme 2s
+}
+.bayan-input:checked ~ .string > .bayan-title{
+  color: black;
+}
+.bayan-input:checked ~ .string > .bayan-icon{
+    transform: rotate(45deg);
+    transition: transform 1s
+  }
+
+/*//////////////////////////////клікабельность 11111111111///////////////////////////////////////////////////*/
+
+.bayan-continer-meme1{
+    display: block;
+    max-width: 100%;
+    background-color:lightgrey;
+    text-align:center;/**/
+    
+}
+.bayan-title1{
+    display: block;
+    cursor: pointer;/*10-destop-*/
+    color:black;
+    padding: 2% 2%;
+    transition: color 1s;
+}
+/* .bayan-title:hover{
+    color: brown;
+*/
+.bayan-input{
+    appearance: none;/*ісчезает відімый інпут*/
+}
+.bayan-input:checked~.bayan-continer-meme1{
+    display: none;
+    animation: meme 2s
+}
+.bayan-input:checked ~ .string > .bayan-title1{
+  color: blue;
+  
+}
+.bayan-input:checked ~ .string > .bayan-icon1{
+    transform: rotate(45deg);
+    transition: transform 1s}
+
+/*////////////////////////////////  icon//////////////////*/
+
+.icon-input:checked~ .string >.bayan-icon{
+    transform: rotate(45deg);
+    transition: transform 1s
+}
+.icon-input:checked~.bayan-continer-meme{
+    display: block;
+    animation: meme 2s;}
+
+.icon-input:checked~ .string >.bayan-title{
+    color: black;}
+
+
+@keyframes meme{
+        0%{opacity: 0;}
+        100% {opacity: 1;}
+    }   
+.bayan-icon{
+    color: black;}   
+.icon-input{
+   appearance: none;
+}
+@keyframes icon{
+    0%{transform: rotate(45deg);}
+    100% {transform: rotate(0deg)}}
+/*////////////////////////////////  icon1111//////////////////*/
+
+.icon-input:checked~ .string >.bayan-icon1{
+    transform: rotate(45deg);
+    transition: transform 1s
+}
+.icon-input:checked~.bayan-continer-meme1{
+    display: none;
+    animation: meme 2s;}
+.icon-input:checked~ .string >.bayan-title1{
+    color:blue;}
+@keyframes meme{
+        0%{opacity: 0;}
+        100% {opacity: 1;}
+    }   
+.bayan-icon1{
+    color: black;}   
+.icon-input{
+   appearance: none;
+}
+}
