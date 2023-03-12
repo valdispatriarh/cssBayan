@@ -13,7 +13,6 @@ html {
 body {
     max-width: 100%;
     background-color: white;
-    font-size: 50%;
     color: blue;
     padding: 1%;
 }
@@ -223,19 +222,18 @@ label {
     display: block;
 }
 
-@media (max-width: 1200px) {
-  label {
+/*/////////15//////////*/
+@media (max-width: 1200px) {label {
 font-size: 1.9rem;
-}}
-@media (max-width: 1024px) {
-  label {
+}}/*узнать по шагам 1200/1024/768/482*/
+@media (max-width: 1024px) {label {
 font-size: 1.6rem;
   }}
-@media (max-width: 768px) {
-  label {
+  /*поговорить с Наташей*/
+@media (max-width: 768px) {label {
 font-size: 1.5rem;
   }}
-@media (max-width: 480px) {
-  label {
+@media (max-width: 480px) {label {
 font-size: 1.3rem;
   }}
+  
