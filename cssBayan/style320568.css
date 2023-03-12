@@ -46,8 +46,7 @@ body{max-width: 100%;
 /*///////////////////////////клікабельность///////////////////////////////////////////*/
 .bayan-continer-meme{
     display: none;
-    animation: meme 2s
-    /**/}
+    }
 
 .bayan-title{
     display: block;
